@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smart City Tracker</title>
+<meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+  <style>
+  h2{
+  color: mediumblue;
+  text-align: center;
+  }
+ 
+h5{
+color: mediumblue;
+}
+button {
+     background-color:mediumblue;
+     color: white;
+}
+  </style> 
+  <script type="text/javascript" src="field_validation.js"></script>
+  
+</head>
+<body>
+
+<section class="vh-100" style="background-image: url(image/img3.jpg); background-size: cover;">
+  <div class="container py-5 h-100" style="background-color:lightskyblue; ">
+    
+<h2>Welcome to Smart City Tracker</h2>
+<h5>Please fill this form to create an account</h5>
+
+<form name="form1" id="f1" action="welcome.jsp">
+<table>
+
+<tr><td><b>Name :</b></td>
+<td><input type="text" placeholder="Enter Name" name="name"><span id="nameloc" style="color: red"></span></td>
+</tr>
+
+<tr><td><b>Age :</b></td>
+<td><input type="text" placeholder="Enter age" name="name"><span id="nameloc" style="color: red"></span></td>
+</tr>
+
+<tr><td><b>Gender :</b></td>
+<td><input type="radio" name="gender" value="gender">Male
+<input type="radio" name="gender" value="gender">Female<span id="genderloc"></span><br></td>
+</tr>
+
+<tr><td><b>Contact Address : </b></td>
+<td>
+<address>
+<textarea rows="5" cols="20" placeholder="Enter address" name="address"></textarea> <span id="addressloc"></span>
+</address>
+</td>
+</tr>
+
+<tr><td><b>Contact Number : </b></td>
+<td>
+<input type="text" placeholder="Enter contact number" name="contact_number" > <span id="numloc"></span>
+</td>
+</tr>
+
+<tr><td><b>Email Id: </b></td>
+<td>
+<input type="email" placeholder="Enter emial id" name="email" > <span id="emailloc"></span>
+</td>
+</tr>
+
+<tr><td><b>Passport Number : </b></td>
+<td>
+<input type="text" placeholder="Enter passport number" name="passport_number" ><span id="passportnumloc"></span>
+</td>
+</tr>
+
+<tr><td><b>User Name : </b></td>
+<td>
+<input type="text" placeholder="Enter username" name="username"><span id="usernameloc"></span>
+</td>
+</tr>
+
+<tr><td><b>Password : </b></td>
+<td>
+<input type="password" placeholder="Enter password" name="password1" >
+</td>
+</tr>
+
+<tr><td><b>Confirm Password : </b></td>
+<td>
+<input type="password" placeholder="Repeat password" name="password2" ><span id="passloc"></span>
+</td>
+</tr>
+  
+  <tr><td>
+<button name="button1" type="submit" value="submit" onclick="return validate()">Submit</button>
+<button name="button2"  type="reset" value="reset">Reset</button>
+</td>
+</tr>
+    </table>
+      
+</form>
+</div>
+  </section>
+    
+</body>
+</html>

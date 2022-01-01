@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smart City Tracker</title>
+<meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+  <style>
+  h2{
+  color: mediumblue;
+  text-align: center;
+  }
+ 
+h5{
+color: mediumblue;
+}
+button {
+     background-color:mediumblue;
+     color: white;
+     font-size: 20px;
+}
+  </style> 
+</head>
+<body>
+
+<section class="vh-100" style="background-image: url(image/img3.jpg); background-size: cover;">
+  <div class="container py-5 h-100" style="background-color:lightskyblue; ">
+    
+<h2>Welcome to Smart City Tracker</h2>
+<h5>Please fill this form to create an account</h5>
+<form name="form1">
+<div class="form-group">
+<label for="name"><b>Name of hotel or resort:  </b></label>
+<input type="text" placeholder="Enter Nmae" name="name"><br>
+</div>
+
+<div class="form-group">
+<label for="type"><b>Type : </b></label>
+<input type="radio" name="type" value="Hotel">Hotel
+<input type="radio" name="type" value="Resort">Resort<br>
+</div>
+<div class="form-group">
+<label for="owner"><b>Name of the owner : </b></label>
+<input type="text" placeholder="Enter Nmae" name="owner_name"><br>
+
+</div>
+
+<div class="form-group">
+<address>
+<label for="address"><b>Contact Address : </b></label>
+ <textarea rows="5" cols="20" placeholder="Enter address"></textarea>  
+</address>
+</div>
+
+<div class="form-group">
+<label for="contact_number"><b>Contact Number of Hotel </b></label>
+<input type="text" placeholder="Enter contact number" name="contact_number">   <br>
+</div>
+<div class="form-group">
+<label for="contact_number"><b>Contact Number of owner </b></label>
+<input type="text" placeholder="Enter contact number" name="contact_number_owner">   <br>
+</div>
+
+<div class="form-group">
+<label for="email"><b>Email Id: </b></label>
+<input type="email" placeholder="Enter emial id" name="email">   <br>
+</div>
+
+<div class="form-group">
+<label for="hotel_img"><b>Upload Hotel Images</b></label>
+<input type="file" name="fileupload1" value="fileupload"  id="fileupload1"><br>
+</div>
+
+<div class="form-group">
+<label for="username"><b>User Name : </b></label>
+<input type="text" placeholder="Enter username" name="username"><br>
+</div>
+
+<div class="form-group">
+<label for="password"><b>Password : </b></label>
+<input type="password" placeholder="Enter password" name="password"><br>
+</div>
+
+<div class="form-group">
+<label for="confirm_password"><b>Confirm Password : </b></label>
+<input type="password" placeholder="Repeat password" name="confirm_password"><br>
+</div>
+  
+<button name="button1" type="submit" value="submit">Submit</button>
+   <button name="button2" type="submit" value="reset">Cancel</button>
+      
+</form>
+</div>
+</section>
+         
+</body>
+</html>
